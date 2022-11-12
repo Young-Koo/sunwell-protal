@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Shenzhen Yangjia Technology Co., Ltd-加入扬嘉</title>
+	<meta name="Keywords" content="Shenzhen Yangjia Technology Co., Ltd">
+	<meta name="Description">
+	<meta name="Author">
+	<meta name="Copyright">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script charset="utf-8" src="js/jQuery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#join").addClass("cur");
+			});
+			$(document).ready(function(){
+				$("#index").removeClass("cur");
+			});
+		</script></head><body>
+		<div class="header header_shadow">
+			<div class="header_box">
+				<div class="logo fl" style="width: auto;line-height: 60px;">
+					<a href="index.htm" style="font-size: 20px;text-decoration: none;color: #333;">Shenzhen Yangjia Technology Co., Ltd</a>
+				</div>
+				<div class="header_right fr">
+					<div class="nav fr">
+						<ul>
+							<li class="cur" id="index"><a href="index.htm">Home</a></li>
+							<li id="success"><a href="product.htm">Product</a></li>
+							<li id="about"><a href="about.htm">About</a></li>
+							<li id="contact"><a href="contact.htm">Contact</a></li>
+						 </ul>
+						<div class="nav-line"></div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				
+				function navSlider(){
+					var $nav = $('.nav'),
+						$cur = $('.nav li.cur a'),
+						$navLine = $('.nav-line'),
+						$anchor = $('a',$nav.children()),
+						curPosL = $cur.position().left,
+						curW = $cur.outerWidth(true),
+						curIdx = $('li.cur',$nav).index();
+					$navLine.css({'width':curW,'left':curPosL});
+					$anchor.not('li.last a',$nav).each(function(index) {
+			            var posL = $(this).position().left,
+							w = $(this).outerWidth(true);
+						$(this).mouseenter(function(){
+							$navLine.animate({'width':w,'left':posL},250);
+							$(this).parent().addClass('cur').siblings().removeClass('cur');
+						});
+			        });
+					$nav.mouseleave(function(){
+						$navLine.animate({'width':curW,'left':curPosL},250);
+						$anchor.parent(':eq('+curIdx+')').addClass('cur').siblings().removeClass('cur');
+					});
+					
+				};
+				function downLoadBtn(){
+					var $downLoadBtn = $('.download'),
+						$p = $downLoadBtn.next('p:not(".last")'),
+						gcaTimer = false;
+						if(gcaTimer){
+							clearTimeout(gcaTimer);
+							gcaTimer = false;
+						}
+						$downLoadBtn.mouseenter(function(){
+							gcaTimer = setTimeout(function(){
+								$downLoadBtn.animate({'margin-top':'-5px'},100,function(){
+									$(this).animate({'margin-top':'0'},300,"easeOutBounce");
+								});
+								$p.animate({'top':'80px'},100,function(){
+									$(this).animate({'top':'75px'},300,"easeInBounce");
+								});
+							},100);
+						}).live('mouseleave',function(){
+							if(gcaTimer){
+								clearTimeout(gcaTimer);
+								catTimer = false;
+							}
+						});
+				};
+				downLoadBtn();
+				navSlider();
+			});
+		</script>
+		<div class="banner_box">
+			<div class="banner banner_contact">
+			</div>
+		</div>
+		<div class="content_core">
+			<div class="con_tit">
+				<div class="tit_wrapper"><h5>加入扬嘉</h5></div>
+			</div>
+			<div class="core_con_spec1">
+				<div class="core_tit" style="height:40px;padding-top:10px;">
+					<span style="font-size:15px;color:#005aaa;">Java软件工程师</span>
+				</div>
+				<div class="core_detail join_us">
+						<p style="text-indent: 0;">任职要求：</p>
+						<p>1、完成软件系统代码的实现，编写代码注释和开发文档；</p>
+						<p>2、辅助进行系统的功能定义,程序设计；</p>
+						<p>3、根据设计文档或需求说明完成代码编写，调试，测试和维护；</p>
+						<p>4、分析并解决软件开发过程中的问题；</p>
+						<p>5、协助测试工程师制定测试计划，定位发现的问题；</p>
+						<p>6、配合团队成员完成相关任务目标。</p>
+						<p style="text-indent: 0;">任职资格：</p>
+						<p>1、计算机或相关专业本科学历以上，对数据结构，OO，软件结构、设计模式有较好理解；</p>
+						<p>2、熟悉JUint、Spring、Hibernate、JavaScript、HTML、CSS等框架或技术；</p>
+						<p>3、具有Oracle、MySQL等至少一种关系数据库的使用经验；</p>
+						<p>4、有Linux使用经验值者优先；</p>
+						<p>5、能熟练阅读中文、英文技术文档；富有团队精神，责任感和沟通能力；</p>
+						<p>6、2年以上工作经验(优秀应届毕业生也可)。</p>					
+				</div>
+			</div>
+			<div class="core_con_spec">
+				<div class="core_tit" style="height:40px;padding-top:10px;">
+					<span style="font-size:15px;color:#005aaa;">平面设计师(互联网相关)</span>
+				</div>
+				<div class="core_detail join_us">
+						<p style="text-indent: 0;">岗位职责：</p>
+						<p>1、根据项目需求，完成网站页面设计；</p>
+						<p>2、结合现有项目的特点，不断更新完善项目UI。</p>
+						<p style="text-indent: 0;">任职资格：</p>
+						<p>1、具备较强的审美能力，对工作有创新精神，对页面设计有自己独立的见解；</p>
+						<p>2、精通photoshop等相关平面设计软件；有HTML、CSS使用经验者优先；</p>
+						<p>3、注重细节，有较好的团队合作意识；</p>
+						<p>4、应聘请提交已有创作作品。</p>	
+				</div>
+			</div>
+		</div><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	<div class="bottom_nav mg_t_15" style="display: none;">
+		<div class="bottom_nav_box">
+			<div class="bottom_nav_item"><a href="http://v2.caffcoo.com" target="_blank" title="体验一下">体验一下</a></div>
+			<div class="bottom_nav_item"><a href="success.htm" target="_blank" title="查看案例">查看案例</a></div>
+			<div class="bottom_nav_item"><a href="http://wpa.qq.com/msgrd?v=3&uin=630258968&site=qq&menu=yes" target="_blank" title="联系我吧">联系我吧</a></div>
+			<!-- <div class="bottom_nav_item"><a href=""></a></div> -->
+			<div class="bottom_nav_item"><a href="join.htm" target="_blank" title="加入扬嘉">加入扬嘉</a></div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+</html>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer_box">
+			<div style="color: #888;text-align: center;">
+				<div class="pd_t_20">
+					<a href="index.htm" target="_blank" style="color: #888;">Home</a> |
+					<a href="product.htm" target="_blank" style="color: #888;">Product</a> |
+					<a href="about.htm" target="_blank" style="color: #888;">About</a> |
+					<a href="contact.htm" target="_blank" style="color: #888;">Contact</a>
+				</div>
+				<div class="mg_t_10">
+					<p>©2019-2020 sun-well.cn. All rights reserved.</p>
+				</div>
+				<div class="mg_t_10">
+					<p><a href="https://beian.miit.gov.cn" target="_blank" style="color: #888;">粤ICP备2021106768号-1</a></p>
+				</div>
+			</div>
+		</div>
+		<script>
+		</script> 
+	</div></body>
+</html>

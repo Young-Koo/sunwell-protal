@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Shenzhen Yangjia Technology Co., Ltd-Product</title>
+	<meta name="Keywords" content="Shenzhen Yangjia Technology Co., Ltd">
+	<meta name="Description">
+	<meta name="Author">
+	<meta name="Copyright">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script charset="utf-8" src="js/jQuery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#success").addClass("cur");
+			});
+			$(document).ready(function(){
+				$("#index").removeClass("cur");
+			});
+		</script></head><body>
+		<div class="header header_shadow">
+			<div class="header_box">
+				<div class="logo fl" style="width: auto;line-height: 60px;">
+					<a href="index.htm" style="font-size: 20px;text-decoration: none;color: #333;">Shenzhen Yangjia Technology Co., Ltd</a>
+				</div>
+				<div class="header_right fr">
+					<div class="nav fr">
+						<ul>
+							<li class="cur" id="index"><a href="index.htm">Home</a></li>
+							<li id="success"><a href="product.htm">Product</a></li>
+							<li id="about"><a href="about.htm">About</a></li>
+							<li id="contact"><a href="contact.htm">Contact</a></li>
+						 </ul>
+						<div class="nav-line"></div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				
+				function navSlider(){
+					var $nav = $('.nav'),
+						$cur = $('.nav li.cur a'),
+						$navLine = $('.nav-line'),
+						$anchor = $('a',$nav.children()),
+						curPosL = $cur.position().left,
+						curW = $cur.outerWidth(true),
+						curIdx = $('li.cur',$nav).index();
+					$navLine.css({'width':curW,'left':curPosL});
+					$anchor.not('li.last a',$nav).each(function(index) {
+			            var posL = $(this).position().left,
+							w = $(this).outerWidth(true);
+						$(this).mouseenter(function(){
+							$navLine.animate({'width':w,'left':posL},250);
+							$(this).parent().addClass('cur').siblings().removeClass('cur');
+						});
+			        });
+					$nav.mouseleave(function(){
+						$navLine.animate({'width':curW,'left':curPosL},250);
+						$anchor.parent(':eq('+curIdx+')').addClass('cur').siblings().removeClass('cur');
+					});
+					
+				};
+				function downLoadBtn(){
+					var $downLoadBtn = $('.download'),
+						$p = $downLoadBtn.next('p:not(".last")'),
+						gcaTimer = false;
+						if(gcaTimer){
+							clearTimeout(gcaTimer);
+							gcaTimer = false;
+						}
+						$downLoadBtn.mouseenter(function(){
+							gcaTimer = setTimeout(function(){
+								$downLoadBtn.animate({'margin-top':'-5px'},100,function(){
+									$(this).animate({'margin-top':'0'},300,"easeOutBounce");
+								});
+								$p.animate({'top':'80px'},100,function(){
+									$(this).animate({'top':'75px'},300,"easeInBounce");
+								});
+							},100);
+						}).live('mouseleave',function(){
+							if(gcaTimer){
+								clearTimeout(gcaTimer);
+								catTimer = false;
+							}
+						});
+				};
+				downLoadBtn();
+				navSlider();
+			});
+		</script>
+		<div class="banner_box">
+			<div class="banner banner_success">
+			</div>
+		</div>
+		<div class="content_success">
+			<div class="con_tit">
+				<div class="tit_wrapper"><h5>Product</h5></div>
+			</div>
+			<div class="success_con">
+				<div class="success_item">
+					<div class="success_site_pic fl">
+						<a target="_blank"><img src="images/product01.jpg" width="270" height="270" title="bag"></a>
+					</div>
+					<div class="success_site_desc fl">
+						<p class="success_site_tit"><a target="_blank">OEM polyester drawstring bag customized promotional drawstring bag</a></p>
+						<p>Size:Medium(30-50cm), customized</p>
+						<p>Material:Polyester, polyester</p>
+						<p>Use:Gift Bag</p>
+						<p>Place of Origin:China</p>
+						<p>Color:full color</p>
+						<p>Logo:Custom Logo Accepted</p>
+						<p>MOQ:300pcs</p>
+						<p>Sample:available</p>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="spilt_line"></div>
+			</div>
+		</div><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	<div class="bottom_nav mg_t_15" style="display: none;">
+		<div class="bottom_nav_box">
+			<div class="bottom_nav_item"><a href="http://v2.caffcoo.com" target="_blank" title="体验一下">体验一下</a></div>
+			<div class="bottom_nav_item"><a href="success.htm" target="_blank" title="查看案例">查看案例</a></div>
+			<div class="bottom_nav_item"><a href="http://wpa.qq.com/msgrd?v=3&uin=630258968&site=qq&menu=yes" target="_blank" title="联系我吧">联系我吧</a></div>
+			<!-- <div class="bottom_nav_item"><a href=""></a></div> -->
+			<div class="bottom_nav_item"><a href="join.htm" target="_blank" title="加入扬嘉">加入扬嘉</a></div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+</html>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer_box">
+			<div style="color: #888;text-align: center;">
+				<div class="pd_t_20">
+					<a href="index.htm" target="_blank" style="color: #888;">Home</a> |
+					<a href="product.htm" target="_blank" style="color: #888;">Product</a> |
+					<a href="about.htm" target="_blank" style="color: #888;">About</a> |
+					<a href="contact.htm" target="_blank" style="color: #888;">Contact</a>
+				</div>
+				<div class="mg_t_10">
+					<p>©2019-2020 sun-well.cn. All rights reserved.</p>
+				</div>
+				<div class="mg_t_10">
+					<p><a href="https://beian.miit.gov.cn" target="_blank" style="color: #888;">粤ICP备2021106768号-1</a></p>
+				</div>
+			</div>
+		</div>
+		<script>
+		</script> 
+	</div></body>
+</html>

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Shenzhen Yangjia Technology Co., Ltd</title>
+	<meta name="Keywords" content="Shenzhen Yangjia Technology Co., Ltd">
+	<meta name="Description">
+	<meta name="Author">
+	<meta name="Copyright">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script charset="utf-8" src="js/jQuery.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/bottom_slider.css">
+		<link rel="stylesheet" type="text/css" href="css/coda-slider-2.0.css">
+		<script type="text/javascript" src="js/min_contentslider.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script></head><body>
+		<div class="header header_shadow">
+			<div class="header_box">
+				<div class="logo fl" style="width: auto;line-height: 60px;">
+					<a href="index.htm" style="font-size: 20px;text-decoration: none;color: #333;">Shenzhen Yangjia Technology Co., Ltd</a>
+				</div>
+				<div class="header_right fr">
+					<div class="nav fr">
+						<ul>
+							<li class="cur" id="index"><a href="index.htm">Home</a></li>
+							<li id="success"><a href="product.htm">Product</a></li>
+							<li id="about"><a href="about.htm">About</a></li>
+							<li id="contact"><a href="contact.htm">Contact</a></li>
+						 </ul>
+						<div class="nav-line"></div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				
+				function navSlider(){
+					var $nav = $('.nav'),
+						$cur = $('.nav li.cur a'),
+						$navLine = $('.nav-line'),
+						$anchor = $('a',$nav.children()),
+						curPosL = $cur.position().left,
+						curW = $cur.outerWidth(true),
+						curIdx = $('li.cur',$nav).index();
+					$navLine.css({'width':curW,'left':curPosL});
+					$anchor.not('li.last a',$nav).each(function(index) {
+			            var posL = $(this).position().left,
+							w = $(this).outerWidth(true);
+						$(this).mouseenter(function(){
+							$navLine.animate({'width':w,'left':posL},250);
+							$(this).parent().addClass('cur').siblings().removeClass('cur');
+						});
+			        });
+					$nav.mouseleave(function(){
+						$navLine.animate({'width':curW,'left':curPosL},250);
+						$anchor.parent(':eq('+curIdx+')').addClass('cur').siblings().removeClass('cur');
+					});
+					
+				};
+				function downLoadBtn(){
+					var $downLoadBtn = $('.download'),
+						$p = $downLoadBtn.next('p:not(".last")'),
+						gcaTimer = false;
+						if(gcaTimer){
+							clearTimeout(gcaTimer);
+							gcaTimer = false;
+						}
+						$downLoadBtn.mouseenter(function(){
+							gcaTimer = setTimeout(function(){
+								$downLoadBtn.animate({'margin-top':'-5px'},100,function(){
+									$(this).animate({'margin-top':'0'},300,"easeOutBounce");
+								});
+								$p.animate({'top':'80px'},100,function(){
+									$(this).animate({'top':'75px'},300,"easeInBounce");
+								});
+							},100);
+						}).live('mouseleave',function(){
+							if(gcaTimer){
+								clearTimeout(gcaTimer);
+								catTimer = false;
+							}
+						});
+				};
+				downLoadBtn();
+				navSlider();
+			});
+		</script>
+		<div id="home_container" class="clearfix">
+			<div class="syFocusThumb">
+				<div id="syFocusThumb" class="sliderwrapper">					
+					<div class="contentdiv" style="background-image: url(images/banner_3.png); display: none; overflow: hidden; z-index: 1660; visibility: visible; background-position: 50% 0%; background-repeat: initial initial;">
+						<div class="dPic"></div>
+					</div>
+					<div class="contentdiv" style="background-image: url(images/banner_4.jpg); display: none; overflow: hidden; z-index: 1661; visibility: visible; background-position: 50% 0%; background-repeat: initial initial;">
+						<div class="dPic"></div>
+					</div>		
+					<div class="contentdiv" style="background-image: url(images/banner_2.jpg); display: none; overflow: hidden; z-index: 1662; visibility: visible; background-position: 50% 0%; background-repeat: initial initial;">
+						<div class="dPic"></div>
+					</div>			
+				</div>
+				<div class="pagination_bg">
+					<div id="paginate-syFocusThumb" class="pagination">
+					<i id="prev" class="prev" title="上一幅"></i>
+						<div class="thumbWrap clearfix">
+							<div class="outScroll_pic" style="margin-left: 0px;">
+								<ul class="holder">
+									<li class="toc" rel="2" style="float: left;"><i></i><img src="images/banner_3_small.png"></li>
+									<li class="toc" rel="4" style="float: left;"><i></i><img src="images/banner_4_small.jpg"></li>
+									<li class="toc" rel="5" style="float: left;"><i></i><img src="images/banner_2_small.jpg"></li>
+								</ul>
+							</div>
+						</div>
+					<i id="next" class="next" title="下一幅"></i>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<script src="js/image-hover.js" type="text/javascript"></script>
+		<div class="content">	
+			<div class="content_box">
+				<div class="part_2 mg_t_20">
+					<div class="success_item">
+						<div class="success_site_pic fl">
+							<a target="_blank"><img src="images/product01.jpg" width="270" height="270" title="bag"></a>
+						</div>
+						<div class="success_site_desc fl">
+							<p class="success_site_tit"><a target="_blank">OEM polyester drawstring bag customized promotional drawstring bag</a></p>
+							<p>Size:Medium(30-50cm), customized</p>
+							<p>Material:Polyester, polyester</p>
+							<p>Use:Gift Bag</p>
+							<p>Place of Origin:China</p>
+							<p>Color:full color</p>
+							<p>Logo:Custom Logo Accepted</p>
+							<p>MOQ:300pcs</p>
+							<p>Sample:available</p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer_box">
+			<div style="color: #888;text-align: center;">
+				<div class="pd_t_20">
+					<a href="index.htm" target="_blank" style="color: #888;">Home</a> |
+					<a href="product.htm" target="_blank" style="color: #888;">Product</a> |
+					<a href="about.htm" target="_blank" style="color: #888;">About</a> |
+					<a href="contact.htm" target="_blank" style="color: #888;">Contact</a>
+				</div>
+				<div class="mg_t_10">
+					<p>©2019-2020 sun-well.cn. All rights reserved.</p>
+				</div>
+				<div class="mg_t_10">
+					<p><a href="https://beian.miit.gov.cn" target="_blank" style="color: #888;">粤ICP备2021106768号-1</a></p>
+				</div>
+			</div>
+		</div>
+		<script>
+		</script> 
+	</div></body>
+</html>
