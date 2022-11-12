@@ -1,0 +1,182 @@
+/**公共样式*/
+* { padding:0;margin:0; }
+body{ font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体"; font-size:12px;color:#666;min-width: 960px;}
+.mg_l_5 { margin-left:5px; }
+.mg_l_10 { margin-left:10px; }
+.mg_l_15 { margin-left:15px; }
+.mg_l_16 { margin-left:16px; }
+.mg_l_25 { margin-left:25px; }
+.mg_r_10 { margin-right:10px;}
+.mg_r_15 { margin-right:15px; }
+.mg_t_3	 { margin-top:3px; }
+.mg_t_5	 { margin-top:5px; }
+.mg_t_10 { margin-top:10px; }
+.mg_t_15 { margin-top:15px; }
+.mg_t_20 { margin-top:20px; }
+.mg_t_30 { margin-top:30px; }
+.mg_t_45 { margin-top:45px; }
+.pd_t_10 { padding-top:10px;}
+.pd_t_12 { padding-top:12px;}
+.pd_t_15 { padding-top:15px;}
+.pd_t_18 { padding-top:18px;}
+.pd_t_20 { padding-top:20px;}
+.alin_r { text-align:right;}
+.center { text-align:center;}
+.no_margin { margin-left:0;}
+h4 { font-size:16px;}
+h5 { font-size:14px;}
+li { list-style: none;}
+img { border:0; }
+a { text-decoration:none;color:#333;}
+a:hover { text-decoration:underline; color:#C12129; }
+.fl { float:left; }
+.fr { float:right; }
+.header_shadow { 
+	-moz-box-shadow: 0px 3px 5px #ccc;
+	-webkit-box-shadow: 0px 3px 5px #ccc;
+	box-shadow:0px 1px 5px #ccc;
+}
+
+
+    
+
+/**头部样式*/
+.header { width:100%;height:60px;border-bottom:1px solid #ccc; }
+.header_box { width:980px;height:100%;margin:0 auto; }
+.logo { width:140px;height:60px; }
+.logo_pic { width:140px; }
+.header_right { height:60px;}
+.phone { height:45px;}
+.nav { height:60px;position: relative; }
+.nav ul { height:60px;}
+.nav ul li { display:inline;height:57px;float:left;line-height: 60px; }
+.nav ul li a { display:block;font-size:15px; width:85px;height:57px;text-align:center;line-height: 80px;text-decoration:none; }
+.nav ul li a:hover { color:#005aaa;}
+.nav .nav-line { border-bottom: #39aa42 2px solid; position: absolute; bottom: 0px; height: 0px; overflow: hidden; left: 0px;}
+.cur a { color: #39aa42;}
+
+.footer { width:100%;height:115px;background:#f5f5f5;margin-top:20px;}
+.footer_box { width:980px;height:100%;margin:0 auto;}
+.copyright_box { width:280px;height:80px;padding-top:35px;color:#333;}
+.footer_img { width:650px;height:100%;background:url('../images/caffcoo_footer.png') left bottom no-repeat;}
+.copyright {}
+.slogan { width:210px;height:22px;background:url('../images/slogan.jpg') no-repeat;}
+
+
+/**内页样式*/
+.banner_box { width:100%;height:320px;}
+.banner { width:1440px;height:320px;margin:0 auto;}
+.con_tit { width:950px;height:35px;background:#f3f3f3;padding-left:30px;}
+.tit_wrapper { height:35px;line-height:35px;}
+.banner_contact { background:url('../images/banner_contact.jpg') no-repeat center; width:100%;height:320px;}
+.banner_about { background:url('../images/banner_about.jpg') no-repeat center; width:100%;height:320px;}
+.banner_news { background:url('../images/banner_news.jpg') no-repeat center; width:100%;height:320px;}
+.banner_core { background:url('../images/banner_core.jpg') no-repeat center; width:100%;height:320px;}
+.banner_insurance{ background:url('../images/banner_insurance.jpg') no-repeat center; width:100%;height:320px;}
+
+.banner_success { background:url('../images/banner_success.jpg') no-repeat center; width:100%;height:320px;}
+.bottom_nav { width:100%;height:105px;}
+.bottom_nav_box { width:780px;height:105px;margin:0 auto;padding-left:200px;border:1px solid #f3f3f3;background:url('../images/click_me.png') 50px center no-repeat;}
+.bottom_nav_item { width:107px;height:107px;float:left;margin-left:40px;background:url('../images/bottom_nav_item.png') center no-repeat;}
+.bottom_nav_item a { display:block;width:100%;height:100%;text-align: center;line-height: 107px;text-decoration: none;cursor: pointer;}
+.bottom_nav_item a:hover { background:url('../images/bottom_nav_item_hover.png') center no-repeat;color:#fff; }
+
+/**联系我们*/
+.content_contact { width:980px;height:auto;margin:-120px auto 0 auto;border:1px solid #f1f1f1;background:#fff;}
+.contact_con { width:945px;height:auto;padding:30px 15px 30px 20px;}
+.contact_desc { height:130px;background:#f5f5f5;padding:15px 10px;}
+.inner_tit { width:100px;height:130px;border-right:1px solid #ccc;}
+.inner_desc { height:130px;border-left:1px solid #fff;padding-left:20px;}
+.inner_desc p { line-height:25px;font-size:13px;}
+.contact_way { height:130px;background:#f1f1f1;padding:15px 10px;}
+.map_container { width:945px;height:500px;padding:15px 0;}
+.contact_left_box {}
+.ad_pic { width:265px;height:415px;}
+
+/**成功案例*/
+.content_success { width:980px;height:auto;margin:-120px auto 0 auto;border:1px solid #f1f1f1;background:#fff;}
+.success_con { width:920px;height:auto;padding:30px 30px;}
+.success_item { width:920px;}
+.spilt_line { margin:20px 0;border-bottom:1px dotted #ccc;}
+.success_site_pic { width:300px;}
+.success_site_pic img { border:1px solid #ccc;}
+.success_site_desc { width:520px;}
+.success_site_tit { margin-bottom:15px;}
+.success_site_tit a { font-size:14px;font-weight:bold;color:#005aaa;}
+.success_site_tit a:hover { color:#C12129}
+.success_site_tit_index { margin-bottom:10px;}
+.success_site_tit_index a { font-size:14px;font-weight:bold;color:#005aaa;}
+.success_site_tit_index a:hover { color:#C12129}
+.success_site_desc p { line-height:28px;font-size:13px;}
+
+/**关于我们*/
+.content_about { width:980px;height:auto;margin:-120px auto 0 auto;border:1px solid #f1f1f1;background:#fff;}
+.about_con { width:920px;height:auto;padding:30px 30px;}
+.left_text { width:650px;height:auto;font-size:13px;}
+.left_text p { text-indent:24px;line-height:25px;margin-top:5px;}
+.right_pic { width:260px;height:450px;}
+.about_tit { width:82px;height:32px;background:url('../images/about.png') no-repeat;}
+.idea_tit { width:82px;height:32px;background:url('../images/idea.png') no-repeat;}
+.member_tit { width:82px;height:32px;background:url('../images/member.png') no-repeat;}
+.main_member { width:900px;height:200px;padding:10px;}
+.main_member_item { width:430px;height:180px;padding:10px;}
+.main_member_item_spec { width:440px;height:180px;padding:10px 0 10px 10px;}
+.main_member_item p { line-height:22px;}
+.main_member_item_spec p { line-height:20px;}
+.member_pic { width:130px;height:160px;}
+.member_pic img { border:1px solid #ccc;}
+.member_desc { width:280px;}
+.member_name { font-size:14px;font-weight:bold;color:#005aaa;}
+.member_name_1 { font-size:12px;font-weight:bold;color:#005aaa;}
+.other_member { height:90px;padding:10px;}
+.other_member_item { width:300px;height:90px;}
+.other_member_pic { width:60px;height:60px;margin-left:5px;}
+.other_member_desc { width:210px;height:80px;padding-left:20px;padding-top:5px;background:url('../images/member_bg.gif') no-repeat;}
+.word_box { width:175px;height:60px;}
+
+/**资讯动态*/
+.content_news { width:980px;height:auto;margin:-120px auto 0 auto;border:1px solid #f1f1f1;background:#fff;}
+.news_con { width:920px;height:auto;padding:30px 30px;}
+.news_nav { width:250px;height:22px;}
+.news_nav ul li { float:left;text-align:center;line-height:22px;}
+.news_nav ul li a { display:block;width:100px;height:22px;cursor:pointer;background:#ccc;text-decoration:none;}
+.news_list { }
+.news_item { height:130px;padding:10px;}
+.news_pic { width:150px;height:100px;}
+.news_desc { width:720px;height:130px;}
+.news_tit { font-size:16px;}
+.news_preview p { line-height:22px;}
+.pub_date { color:#999;}
+.pub_con { color:#666;font-size:13px;}
+.news_selected { background:#005aaa;}
+.news_spilt { border-bottom:1px dotted #e3e3e3;margin:10px 0;}
+
+/**产品核心*/
+.content_core { width:980px;height:auto;margin:-120px auto 0 auto;border:1px solid #f1f1f1;background:#fff;}
+.core_con { width:920px;height:auto;padding:30px 30px;}
+.core_tit { height:70px;border-bottom:3px solid #ccc;}
+.core_detail { padding:30px;}
+.core_detail p { line-height:28px;font-size:13px;}
+.indent { text-indent: 24px;}
+.spec_text { font-size: 14px;font-weight: bold;margin-top:10px;margin-bottom:10px;color:#005aaa;}
+
+/**安全中心*/
+.content_insurance { width:980px;height:auto;margin:-120px auto 0 auto;border:1px solid #f1f1f1;background:#fff;}
+.insurance_tit { height:80px;border-bottom:4px solid #ccc;}
+.insurance_detail { padding:30px;}
+.insurance_detail p { line-height:28px;font-size:13px;}
+.indent { text-indent: 24px;}
+.spec_text { font-size: 14px;font-weight: bold;margin-top:10px;margin-bottom:10px;color:#005aaa;}
+
+/**招聘*/
+.join_us p { text-indent: 24px;}
+.core_con_spec { width:920px;height:auto;padding:0 30px 0 30px;}
+.core_con_spec1 { width:920px;height:auto;padding:30px 30px 0 30px;}
+
+/**资讯动态内页*/
+.news_inner h3 { font-size:22px;text-align: center;font-weight: normal;margin-bottom: 10px;}
+.news_inner { text-align: center;}
+.news_content p { font-size: 14px;text-indent: 28px;line-height:27px;margin:10px 0;}
+.news_content p img { margin:15px auto;}
+.police { width:100px;}
+.police a { margin-left:5px;}

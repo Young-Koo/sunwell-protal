@@ -1,0 +1,32 @@
+@charset "utf-8";
+#home_container { width: 100%; margin: 0 auto; z-index: 1; position: relative; background: #F9F9F9 url(../images/home_bg.png) no-repeat center 400px; }
+/*焦点图
+--------------------------------------------------------------------------------------------------------*/
+.syFocusThumb ol, ul { list-style: none; }
+.syFocusThumb { position: relative; width: 100%; height: 480px; overflow: hidden; background: #dbdcde url(../images/background.jpg) no-repeat center top; }
+.syFocusThumb IMG { border-bottom-style: none; border-right-style: none; border-top-style: none; vertical-align: top; border-left-style: none }
+.focusTit { background: url(../images/indexP1bg.png) no-repeat }
+.focusNew .focusTab { background: url(../images/indexP1bg.png) no-repeat }
+.syFocusThumb .prev { background: url(../images/arrow_l.png) no-repeat }
+.syFocusThumb .next { background: url(../images/arrow_r.png) no-repeat }
+.syFocusThumb .pagination_bg { width: 100%; background: #fff; position: absolute; height: 85px; bottom: 0;border-bottom:1px solid #ccc; }
+.syFocusThumb .pagination { position: relative; text-align: left; width: 960px; ; height: 85px; color: #fff; clear: both; margin: 0 auto; s display: inline-block;}
+.syFocusThumb .pagination li.selected { }
+.syFocusThumb .pagination IMG { padding: 0px; z-index: 998; }
+.syFocusThumb IMG { -ms-interpolation-mode: bicubic }
+.syFocusThumb .holder { width: 4000px; height: 85px; margin: 0 auto; }
+.syFocusThumb .holder li { background: none repeat scroll 0 0 #ffffff; cursor: pointer; float: left; height: 65px; margin: 10px 8px; width: 145px; }
+.syFocusThumb .prev, .syFocusThumb .next { position: absolute; width: 31px; background-position: 0 0; height: 31px; top: 25px; cursor: pointer; left: 15px }
+.syFocusThumb .prev { }
+.syFocusThumb .next { background-position: 0 0; right: 15px; left: auto }
+.syFocusThumb .pagination li.selected IMG { padding: 0; }
+.syFocusThumb .contentdiv { height: 480px }
+.syFocusThumb .dPic { width: 100%; height: 480px; position: relative; }
+.syFocusThumb .contentdiv a { width: 100%; height: 480px; display: block; }
+.syFocusThumb .contentdiv a.ios_down_btn { position: absolute; width: 220px; height: 60px; left: 50%; top: 220px; margin-left: -15px; }
+.syFocusThumb .contentdiv a.android_down_btn { position: absolute; width: 220px; height: 60px; left: 50%; top: 300px; margin-left: -15px; }
+.syFocusThumb .toc img { width: 145px; height: 65px }
+.syFocusThumb .toc i { background: url(../images/indexP1bg.png) no-repeat; z-index: 999; position: absolute; width: 145px; height: 65px; display: none; }
+.syFocusThumb .toc.selected i { display: block; }
+.thumbWrap { overflow: hidden; width: 800px; margin-left: 75px ; position:relative; height:85px;}
+.sliderwrapper { width: 100%; margin: 0 auto; }

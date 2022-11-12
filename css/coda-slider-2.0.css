@@ -1,0 +1,76 @@
+.coda-slider-wrapper {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px;
+}
+.coda-slider {
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+}
+.coda-slider-no-js .coda-slider {
+	PADDING-RIGHT: 20px; HEIGHT: 200px; OVERFLOW: auto !important;
+}
+.coda-slider {
+	WIDTH: 850px;
+}
+.coda-slider .panel {
+	WIDTH: 850px;
+}
+.arrows.coda-slider-wrapper .coda-slider {
+	WIDTH: 850px;
+}
+.arrows.coda-slider-wrapper .coda-slider .panel {
+	WIDTH: 850px;
+}
+/* .arrows.coda-slider-wrapper .coda-slider {
+	MARGIN: 0px;
+} */
+.coda-nav-left A {
+	Z-INDEX: 999 !important; POSITION: absolute; PADDING-BOTTOM: 0px; TEXT-INDENT: -9000px; PADDING-LEFT: 0px; WIDTH: 40px;height:60px; PADDING-RIGHT: 0px; BACKGROUND: url('../images/prev.png') no-repeat 2px 2px;PADDING-TOP: 0px; LEFT: -33px
+}
+.coda-nav-left A:hover {
+	BACKGROUND: url(../images/prev_hover.png) no-repeat 2px 2px;
+}
+.coda-nav-right A {
+	POSITION: absolute; PADDING-BOTTOM: 0px; TEXT-INDENT: -9000px; PADDING-LEFT: 0px; WIDTH: 40px; height:60px; PADDING-RIGHT: 0px; BACKGROUND: url(../images/next.png) no-repeat 2px 2px; RIGHT: -30px; PADDING-TOP: 0px;
+}
+.coda-nav-right A:hover {
+	BACKGROUND: url(../images/next_hover.png) no-repeat 2px 2px;
+}
+.coda-slider P.loading {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px;
+}
+.coda-nav UL {
+	MARGIN: auto; DISPLAY: block; CLEAR: both; OVERFLOW: hidden;
+}
+.coda-nav UL LI {
+	DISPLAY: inline;
+}
+.coda-slider-wrapper {
+	POSITION: relative; CLEAR: both;
+}
+.coda-slider {
+	POSITION: relative; FLOAT: right; margin-right:55px;OVERFLOW: hidden;
+}
+.coda-slider .panel {
+	DISPLAY: block; FLOAT: left;
+}
+.coda-slider .panel-container {
+	POSITION: relative;
+}
+.coda-nav-left {
+	FLOAT: left;
+	width:20px;
+	height:20px;
+}
+.coda-nav-right {
+	FLOAT: right;
+	width:20px;
+	height:20px;
+}
+.coda-nav-left A {
+	TEXT-ALIGN: center; DISPLAY: block; TOP: 30px;left:-2px; TEXT-DECORATION: none;
+}
+.coda-nav-right A {
+	TEXT-ALIGN: center; DISPLAY: block; TOP: 30px;right:0px; TEXT-DECORATION: none;
+}
+/* .panel-wrapper {
+	MARGIN-TOP: 5px;
+} */
